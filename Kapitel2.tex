@@ -1,0 +1,22 @@
+\sep
+\Def[2.1 Zufallsvariable] \newline
+Sei \( (\omega, \mathcal{F}, \mathbb{P})\) ein Wahrscheinlichkeitsraum. Eine Zufallsvariable ist eine Abbildung \( X : \omega \rightarrow \mathbb{R} \) so dass, für alle \( a \in \mathbb{R}\) gilt \[ \{ w \in \omega : X(w) \leq a \} \in \mathcal{F}\]
+\Bem  \newline
+Für Ereignisse im Bezug auf Z:V
+\begin{itemize}
+    \item \( \{X \leq a \} = \{ w \in \omega : X(w) \leq a\}\)
+    \item \( \{ a < X \leq b \} = \{ w \in \omega : a < X(w) < b\}\)
+    \item \( \{ X \in \mathbb{Z}\} = \{ w \in \omega : X(w) \in \mathbb{Z}\}\)
+\end{itemize}
+\[ \mathbb{P}[X \leq a] = \mathbb{P}[\{X \leq a\}] = \mathbb{P}[\{w \in \omega : X(w) \leq a\}]\]
+\Def[2.2 Verteilungsfunktion] \newline
+Sei X eine Zufallsvariable auf einem W-Raum \( (\omega, \mathcal{F}, \mathbb{P})\). Die Verteilungsfunktion von X ist eine Funtkion \(F_X : \mathbb{R} \rightarrow [0,1]\), definiert durch \[ \forall a \in \mathbb{R} \ F_X(a) = \mathbb{P}[X \leq a]\]
+\Satz[2.3 Einfache Identität] \newline
+Seien a < b zwei reelle Zahlen. Dann gilt \[ \mathbb{P}[a < X \leq b ] = F(b) - F(a)\]
+\Theo[2.4 Eigenschaften der Verteilungsfunktion] \newline
+Sei X eine Z.V aif einem Wahrscheinlichkeitsraum. Die Verteilungsfunktion \( F = F_X : \R \rightarrow [0,1]\) von X erfüllt folgende Eigenschaften
+\begin{itemize}
+    \item F ist monoton wachsend
+    \item F ist rechtsstetig
+    \item \( \lim_{a \rightarrow -\infty} F(a) = 0 \) und \( \lim_{a \rightarrow \infty} F(a) = 1\)
+\end{itemize}
