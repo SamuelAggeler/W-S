@@ -20,3 +20,13 @@ Sei X eine Z.V aif einem Wahrscheinlichkeitsraum. Die Verteilungsfunktion \( F =
     \item F ist rechtsstetig
     \item \( \lim_{a \rightarrow -\infty} F(a) = 0 \) und \( \lim_{a \rightarrow \infty} F(a) = 1\)
 \end{itemize}
+\Def[2.5] \newline
+Seien \( X_1 \dots X_n \) Zufallsvariablen auf einem W-Raum. Dann heissen \(X_1, \dots X_n \) unabhängig falls \[ \forall x_1, x_2 \dots x_n \in \R \] \[\mathbb{P}[X_1 \leq x_1 \dots X_n \leq x_n ] = \mathbb{P}[X_1 \leq x_1] \dots \mathbb{P}[X_n \leq x_n]\]
+\Satz[2.7 Gruppieren von Zufallsvariablen] \newline
+Seien \(X_1 \dots X_n\) n unabhängige Zufallsvariablen. Seien \( 1 \leq i_1 < i_2 < \dots < i_k \leq n \) Indizes und \(\phi_1 \dots \phi_k\) Abbildungen. Dann sind  \[ Y_1 = \phi_1(X_1 \dots X_{i_1}), Y_2 = \phi_2(X_{i_{1}+1}, \dots X_{i_2}), \dots \] \[Y_k = \phi_k(X_{i_{k-1}+1} \dots X_{i_k})\] unabhängig
+\Def[2.8] \newline
+Eine Folge von Zufallsvariablen \(X_1, X_2, \dots \) heisst
+\begin{itemize}
+    \item unabhängig falls \(X_1, \dots X_n \) unabhängig sind, für alle \(n \in  \N\)
+    \item unabhängig und identisch verteilt(uiv) falls sie unabhängig ist und die Zufallsvariablen dieselbe Verteilungsfunktion haben d.h \[ \forall i, j \ F_{X_i} = F_{X_j}\]
+\end{itemize}

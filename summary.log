@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022/Arch Linux) (preloaded format=pdflatex 2022.5.18)  22 JUN 2022 15:04
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022/Arch Linux) (preloaded format=pdflatex 2022.5.18)  28 JUN 2022 15:24
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -455,7 +455,7 @@ Package: centernot 2016/05/16 v1.4 Centers the not symbol horizontally (HO)
 File: l3backend-pdftex.def 2022-04-14 L3 backend support: PDF output (pdfTeX)
 \l__color_backend_stack_int=\count309
 \l__pdf_internal_box=\box102
-) (./summary.aux (./Kapitel1.aux) (./Kapitel2.aux))
+) (./summary.aux (./Kapitel1.aux) (./Kapitel2.aux) (./Kapitel3.aux))
 \openout1 = `summary.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 83.
@@ -602,35 +602,93 @@ Overfull \hbox (10.42657pt too wide) in paragraph at lines 15--19
 [][][][][][] 
  []
 
-) [1
 
-{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}] (./summary.aux (./Kapitel1.aux) (./Kapitel2.aux))
+Overfull \hbox (8.94008pt too wide) detected at line 24
+\U/msb/m/n/8 P\OT1/cmr/m/n/8 [\OML/cmm/m/it/8 X[] \OMS/cmsy/m/n/8 ^^T \OML/cmm/m/it/8 x[] [] X[] \OMS/cmsy/m/n/8 ^^T \OML/cmm/m/it/8 x[]\OT1/cmr/m/n/8 ] = \U/msb/m/n/8 P\OT1/cmr/m/n/8 [\OML/cmm/m/it/8 X[] \OMS/cmsy/m/n/8 ^^T \OML/cmm/m/it/8 x[]\OT1/cmr/m/n/8 ] [] \U/msb/m/n/8 P\OT1/cmr/m/n/8 [\OML/cmm/m/it/8 X[] \OMS/cmsy/m/n/8 ^^T \OML/cmm/m/it/8 x[]\OT1/cmr/m/n/8 ]
+ []
+
+)
+\openout2 = `Kapitel3.aux'.
+
+ (./Kapitel3.tex
+Overfull \hbox (14.98161pt too wide) in paragraph at lines 16--18
+[][][][][][] 
+ []
+
+[1
+
+{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}]
+Overfull \hbox (4.94595pt too wide) in paragraph at lines 32--34
+[][][][][][] 
+ []
+
+<exp_Dichte_Verteilung.png, id=30, 1027.84pt x 237.88875pt>
+File: exp_Dichte_Verteilung.png Graphic file (type png)
+<use exp_Dichte_Verteilung.png>
+Package pdftex.def Info: exp_Dichte_Verteilung.png  used on input line 65.
+(pdftex.def)             Requested size: 205.56436pt x 47.5769pt.
+
+Underfull \hbox (badness 6316) in paragraph at lines 62--68
+\OT1/cmr/bx/n/8 (+20) Bem: \OT1/cmr/m/n/8 (+20) [3.28A] Die Gra-fik zeigt die Dich-
+ []
+
+
+Underfull \hbox (badness 6188) in paragraph at lines 62--68
+\OT1/cmr/m/n/8 (+20) te und Ver-tei-lungs-funk-ti-on ei-ner ex-po-nen-ti-
+ []
+
+
+Overfull \hbox (19.26108pt too wide) in paragraph at lines 62--68
+[] 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 69--69
+[]\OT1/cmr/m/n/8 (+20) T be-sitzt die Ei-gen-schaft der
+ []
+
+<Dichte_Normalverteilung.png, id=31, 1060.96375pt x 355.3275pt>
+File: Dichte_Normalverteilung.png Graphic file (type png)
+<use Dichte_Normalverteilung.png>
+Package pdftex.def Info: Dichte_Normalverteilung.png  used on input line 74.
+(pdftex.def)             Requested size: 185.67143pt x 62.18323pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 77--77
+\OT1/cmr/m/n/8 (+20) teil-te Zu-falls-va-ria-blen mit Pa-ra-me-tern
+ []
+
+)
+pdfTeX warning (ext4): destination with the same identifier (name{page.}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.94 \end{multicols*}
+                      [2 <./exp_Dichte_Verteilung.png (PNG copy)> <./Dichte_Normalverteilung.png (PNG copy)>] (./summary.aux (./Kapitel1.aux) (./Kapitel2.aux) (./Kapitel3.aux))
 Package rerunfilecheck Info: File `summary.out' has not changed.
 (rerunfilecheck)             Checksum: D41D8CD98F00B204E9800998ECF8427E;0.
 
-Underfull \hbox (badness 10000) in paragraph at lines 94--94
+Underfull \hbox (badness 10000) in paragraph at lines 95--95
 [] [][]
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 94--94
+Underfull \hbox (badness 10000) in paragraph at lines 95--95
 
  []
 
  ) 
 Here is how much of TeX's memory you used:
- 15057 strings out of 478238
- 239322 string characters out of 5850456
- 629433 words of memory out of 5000000
- 32974 multiletter control sequences out of 15000+600000
- 478630 words of font info for 84 fonts, out of 8000000 for 9000
+ 15122 strings out of 478238
+ 240629 string characters out of 5850456
+ 660058 words of memory out of 5000000
+ 33007 multiletter control sequences out of 15000+600000
+ 479180 words of font info for 95 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 60i,11n,63p,1035b,576s stack positions out of 5000i,500n,10000p,200000b,80000s
-</usr/share/texmf-dist/fonts/type1/public/amsfonts/cmextra/cmbsy8.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx8.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cmextra/cmex8.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi6.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy6.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb>
-Output written on summary.pdf (1 page, 119091 bytes).
+ 60i,13n,63p,1035b,601s stack positions out of 5000i,500n,10000p,200000b,80000s
+</usr/share/texmf-dist/fonts/type1/public/amsfonts/cmextra/cmbsy8.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx8.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cmextra/cmex8.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi5.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi6.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr5.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy5.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy6.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb>
+Output written on summary.pdf (2 pages, 214924 bytes).
 PDF statistics:
- 77 PDF objects out of 1000 (max. 8388607)
- 51 compressed objects within 1 object stream
+ 97 PDF objects out of 1000 (max. 8388607)
+ 62 compressed objects within 1 object stream
  9 named destinations out of 1000 (max. 500000)
- 20481 words of extra memory for PDF output out of 20736 (max. 10000000)
+ 20491 words of extra memory for PDF output out of 20736 (max. 10000000)
 
