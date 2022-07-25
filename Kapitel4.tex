@@ -1,0 +1,62 @@
+\sep
+\Def[4.1] \newline
+Sei \( X : \omega \rightarrow \R_+ \) eine Zufallsvariable mit nicht-negativen Werten. Dann heisst \[ \mathbb{E}[X] = \int_0^\infty (1-F_X(x)) dx\] der Erwartungswert von X.
+\Bem[4.2] \newline
+Der Erwartungswert kann sowohl endliche als auch nicht endliche Werte annehmen.
+\Satz[4.3] \newline
+Sei X eine nicht-negative Zufallsvariable. Dann gilt \[ \mathbb{E}[X] \geq 0\]
+\Def[4.4] Sei X eine Zufallsvariable. Falls \(\mathbb{E}[\abs{X}] < \infty \), dann heisst \[ \mathbb{E}[X] = \mathbb{E}[X_+] - \mathbb{E}[X_-]\] Erwartungswert von X.
+\Satz[4.6] Sei \( X: \omega \rightarrow \R \) eine diskrete Zufallsvariable dessen Werte in W (endlich oder abzähbar ) fast sicher liegen. Sei \( \phi : \R \rightarrow \R \) eine Abbildung. Dann gilt \[ \mathbb{E}[\phi(X)] = \sum_{x \in W} \phi(x) \cdot \mathbb{P}[X = x]\]
+\Satz[4.7] Sei \( X: \omega \rightarrow \R \) eine diskrete Zufallsvariable mit Werten in W (endlich oder abzähbar). Für jedes \(\phi : \R \rightarrow \R \) gilt \[ \mathbb{E}[\phi(X)] = \sum_{x \in W} \phi(x) \mathbb{P}[\phi(X = x)]\]
+\Satz[4.8] Sei X eine stetige Zufallsvariable mit Dichte f. Dann gilt \[\mathbb{E}[X] = \int_{-\infty}^{\infty} x \cdot f(x)dx\]
+\Theo[4.9] Sei X eine stetige Zufallsvariable mit Dichte f. Sei \(\phi : \R \rightarrow \R \) eine Abbildung, sodass \( \phi(X )\) eine Zufallsvariable ist. Dann gilt \[ \mathbb{E}[\phi(X)] = \int_{-\infty}^{\infty} \phi(x)f(x)dx\]
+\Theo[4.10 linearität des Erwartungswert] \newline
+Seien \(X, Y : \omega \rightarrow \R \) Zufallsvariablen, sei \(\lambda \in \R\). Falls die Erwartungswerte wohldefiniert sind gilt \begin{itemize}
+    \item \(\mathbb{E}[ \lambda \cdot X ] = \lambda \cdot \mathbb{E}[X]\)
+    \item \(\mathbb{E}[X + Y] = \mathbb{E}[X] + \mathbb{E}[Y]\)
+\end{itemize}
+\Bem[4.11] Die Zufallsvariablen müssen dabei nicht unabhängig sein.
+\Theo[4.13] Seien X,Y zwei Zufallsvariablen. Falls X und Y unabhängig sind, dann gilt \[ \mathbb{E}[XY] = \mathbb{E}[X]\mathbb{E}[Y]\]
+\Satz[4.14 Stetige Extremwertformel] \newline
+Sei X eine Zufallsvariable, sodass \( X \geq 0 \) fast sicher gilt. Dann gilt \[ \mathbb{E}[X] = \int_0^{\infty} \mathbb{P}[X \geq x]dx\]
+\Bem[4.14A]
+Anwedungen: Ausrechnen von Erwartungswert einer exponential-verteilten Zufallsvariable. Sei T eine exponential-verteilte Zufallsvariable mit Paramter \(\lambda \geq 0\) \[ \mathbb{E}[T] = \int_0^\infty \mathbb{P}[X \geq x]dx = \int_0^\infty \exp^{-\lambda x }dx = \frac{1}{\lambda}\]
+\Satz[4.15 Diskrete Extremwertformel] \newline
+Sei X eine diskrete Zufallsvariable mit Werten in \( \N = \{0, 1, 2, \dots \}\). Dann gilt folgende Identität \[ \mathbb{E}[X] = \sum_{n=1}^{\infty} \mathbb{P}[X \geq n]\]
+\Satz[4.16] \newline
+Sei X eine Zufallsvariable. Sei \( f: \R \rightarrow \R_+ \) eine Abbildung, sodass \( \int_{-\infty}^{+ \infty} f(x)dx = 1\). Dann sind folgende Aussagen äquivalent
+\begin{itemize}
+    \item X ist stetig mit Dichte f,
+    \item Für jede stückweise stetige, beschränkte Abbildung \(\phi: \R \rightarrow \R \) gilt \[ \mathbb{E}[\phi(X)] = \int_{-\infty}^{\infty}\phi (x) f(x)dx\]
+\end{itemize}
+\Theo[4.17] \newline
+Seien X,Y zwei diskrete Zufallsvariablen. Die folgenden Aussagen sind äquivalent
+\begin{itemize}
+    \item X, Y sind unabhängig
+    \item Für jedes \( \phi : \R \rightarrow \R, \psi : \R \rightarrow \R \) beschränkt und stückweise stetig gilt \[ \mathbb{E}[\phi(X)\psi(Y)] = \mathbb{E}[\phi(X)]\mathbb{E}[\psi(Y)]\]
+\end{itemize}
+\Theo[4.18] \newline
+Seien \(X_1, \dots , X_n \) n Zufallsvariablen. Die folgenden Aussagen sind äquivalent
+\begin{itemize}
+    \item \(X_1, \dots , X_n \) sind unabhängig
+    \item Für jedes \( \phi_1 (X_1), \dots \phi_n(X_n ) : \R \rightarrow \R \) beschränkt gilt \[\mathbb{E}[\phi_1(X_1), \dots \phi_n(X_n)] = \mathbb{E}[\phi_1(X_1)] \dots \mathbb{E}[\phi_n(X_n)]\]
+\end{itemize}
+\Satz[4.19] \newline
+Seien X,Y zwei Zufallsvariablen, sodass \[ X \leq Y f.s\] gilt. Falls beide Erwartungswerte wohldefiniert sind folgt dann \[ \mathbb{E}[X] \leq \mathbb{E}[Y] f.s\]
+\Theo[4.20 Markow-Ungleichung] \newline
+Sei X eine nicht-negative Zufallsvariable. Für jedes \( a > 0\) gilt dann \[ \mathbb{P}[X \geq a ] \leq \frac{\mathbb{E}[X]}{a}\]
+\Theo[4.21 Jensen Ungleichung] \newline
+Sei X eine Zufallsvariable. Sei \( \phi \R \rightarrow \R \) eine konvexe Funktion. Falls \( \mathbb{E}[\phi(X)]\) und \( \mathbb{E}[X]\) wohldefiniert sind, gilt \[ \phi(\mathbb{E}[X] \leq \mathbb{E}[\phi(X)])\]
+\Def[4.22] Sei X eine Zufallsvariable, sodass \( \mathbb{E}[X^2] < \infty \). Wir definieren die Varianz von X durch \[ \sigma_X^2 = \mathbb{E}[(X-m)^2, \ \text{wobei} \ m=\mathbb{E}[X]]\] DIe Wurzel aus \(\sigma_X^2\) nennen wir die Standardabweichung von X
+\Satz[4.24] \newline
+Sei X eine Zufallsvariable mit \( \mathbb{E}[X^2] < \infty\). Dann gilt für jedes \( a \geq 0\) \[ \mathbb{P}[\abs{X -m} \geq a] \leq \frac{\sigma_X^2}{a^2}, \text{wobei m} = \mathbb{E}[X]\]
+\Satz[4.25] Grundlegende Eigenschaften der Varianz \newline
+\begin{itemize}
+    \item Sei X eine Zufallsvariable mit \( \mathbb{E}[X^2] < \infty \). Dann gilt \[ \sigma_X^2 = \mathbb{E}[X^2] - \mathbb{E}[X]^2\]
+    \item Sei X eine Zufallsvariable mit \( \mathbb{E}[X^2] < \infty \) und sei \( \lambda \in \R \). Dann gilt \[ \sigma_{\lambda X}^2 = \lambda^2 \cdot \sigma_X^2\]
+    \item Seien \(X_1, \dots , X_n \) n-viele paarweise unabhängige Zufallsvariablen und \(S = X_1 + \dots + X_n\). Dann gilt \[ \sigma_S^2 = \sigma_{X_1}^2 + \dots + \sigma_{X_n}^2\]
+\end{itemize}
+\Def[4.26] \newline
+Seien X,Y zwei Zufallsvariablen mit endlichen zweiten Momenten \( \mathbb{E}[X^2] < \infty \) und \( \mathbb{E}[Y^2] < \infty \). Wir definieren die Kovarianz zwischen X und Y durch \[\text{Cov}(X,Y) = \mathbb{E}[XY]-\mathbb{E}[X]\mathbb{E}[Y]\]
+\Bem[4.26A] \newline
+Es gilt X,Y unabhängig \( \implies \text{Cov}(X,Y) = 0\)

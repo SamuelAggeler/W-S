@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022/Arch Linux) (preloaded format=pdflatex 2022.5.18)  28 JUN 2022 15:24
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022/Arch Linux) (preloaded format=pdflatex 2022.5.18)  25 JUL 2022 22:42
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -455,7 +455,7 @@ Package: centernot 2016/05/16 v1.4 Centers the not symbol horizontally (HO)
 File: l3backend-pdftex.def 2022-04-14 L3 backend support: PDF output (pdfTeX)
 \l__color_backend_stack_int=\count309
 \l__pdf_internal_box=\box102
-) (./summary.aux (./Kapitel1.aux) (./Kapitel2.aux) (./Kapitel3.aux))
+) (./summary.aux (./Kapitel1.aux) (./Kapitel2.aux) (./Kapitel3.aux) (./Kapitel4.aux) (./Kapitel5.aux))
 \openout1 = `summary.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 83.
@@ -658,37 +658,108 @@ Underfull \hbox (badness 10000) in paragraph at lines 77--77
  []
 
 )
+\openout2 = `Kapitel4.aux'.
+
+ (./Kapitel4.tex
+Overfull \hbox (12.81772pt too wide) detected at line 42
+\U/msb/m/n/8 E\OT1/cmr/m/n/8 [\OML/cmm/m/it/8 ^^^[]\OT1/cmr/m/n/8 (\OML/cmm/m/it/8 X[]\OT1/cmr/m/n/8 )\OML/cmm/m/it/8 ; [] ^^^[]\OT1/cmr/m/n/8 (\OML/cmm/m/it/8 X[]\OT1/cmr/m/n/8 )] = \U/msb/m/n/8 E\OT1/cmr/m/n/8 [\OML/cmm/m/it/8 ^^^[]\OT1/cmr/m/n/8 (\OML/cmm/m/it/8 X[]\OT1/cmr/m/n/8 )] [] \U/msb/m/n/8 E\OT1/cmr/m/n/8 [\OML/cmm/m/it/8 ^^^[]\OT1/cmr/m/n/8 (\OML/cmm/m/it/8 X[]\OT1/cmr/m/n/8 )]
+ []
+
+
 pdfTeX warning (ext4): destination with the same identifier (name{page.}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.94 \end{multicols*}
-                      [2 <./exp_Dichte_Verteilung.png (PNG copy)> <./Dichte_Normalverteilung.png (PNG copy)>] (./summary.aux (./Kapitel1.aux) (./Kapitel2.aux) (./Kapitel3.aux))
+l.42 ...hi_1(X_1)] \dots \mathbb{E}[\phi_n(X_n)]\]
+                                                   [2 <./exp_Dichte_Verteilung.png (PNG copy)> <./Dichte_Normalverteilung.png (PNG copy)>]
+Underfull \hbox (badness 10000) in paragraph at lines 52--55
+
+ []
+
+
+Underfull \hbox (badness 6445) in paragraph at lines 57--57
+[]\OT1/cmr/m/n/8 (+20) Seien $\OML/cmm/m/it/8 X[]; [] ; X[]$ \OT1/cmr/m/n/8 (+20) n-viele paar-wei-se un-
+ []
+
+)
+\openout2 = `Kapitel5.aux'.
+
+ (./Kapitel5.tex
+Underfull \hbox (badness 10000) in paragraph at lines 7--9
+\OT1/cmr/m/n/8 (+20) Seien $\OML/cmm/m/it/8 X[]; [] ; X[]$ \OT1/cmr/m/n/8 (+20) n dis-kre-te Zu-falls-va-ria-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 7--9
+\OT1/cmr/m/n/8 (+20) blen mit ge-mein-sa-mer Ver-tei-lung $\OML/cmm/m/it/8 p \OT1/cmr/m/n/8 (+20) =
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 9--11
+\OT1/cmr/m/n/8 (+20) Seien $\OML/cmm/m/it/8 X[]; [] ; X[]$ \OT1/cmr/m/n/8 (+20) n dis-kre-te Zu-falls-va-ria-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 9--11
+\OT1/cmr/m/n/8 (+20) blen mit ge-mein-sa-mer Ver-tei-lung $\OML/cmm/m/it/8 p \OT1/cmr/m/n/8 (+20) =
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 11--15
+\OT1/cmr/m/n/8 (+20) Seien $\OML/cmm/m/it/8 X[]; [] ; X[]$ \OT1/cmr/m/n/8 (+20) n dis-kre-te Zu-falls-va-ria-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 11--15
+\OT1/cmr/m/n/8 (+20) blen mit ge-mein-sa-mer Ver-tei-lung $\OML/cmm/m/it/8 p \OT1/cmr/m/n/8 (+20) =
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 11--15
+\OT1/cmr/m/n/8 (+20) (\OML/cmm/m/it/8 p\OT1/cmr/m/n/8 (+20) (\OML/cmm/m/it/8 x[]; [] ; x[]\OT1/cmr/m/n/8 (+20) ))[]$. Die fol-gen-den
+ []
+
+
+Overfull \hbox (50.87033pt too wide) detected at line 20
+\U/msb/m/n/8 P\OT1/cmr/m/n/8 [\OML/cmm/m/it/8 X[] \OMS/cmsy/m/n/8 ^^T \OML/cmm/m/it/8 a[]; [] ; X[] \OMS/cmsy/m/n/8 ^^T \OML/cmm/m/it/8 b\OT1/cmr/m/n/8 ] = [][]  [] [][] \OML/cmm/m/it/8 f\OT1/cmr/m/n/8 (\OML/cmm/m/it/8 x[]; [] ; x[]\OT1/cmr/m/n/8 )\OML/cmm/m/it/8 dx[] [] dx[]
+ []
+
+
+Overfull \hbox (14.94264pt too wide) detected at line 27
+[][]  [] [][] \OML/cmm/m/it/8 ^^^\OT1/cmr/m/n/8 (\OML/cmm/m/it/8 x[]; [] ; x[]\OT1/cmr/m/n/8 ) [] \OML/cmm/m/it/8 f\OT1/cmr/m/n/8 (\OML/cmm/m/it/8 x[]; [] ; x[]\OT1/cmr/m/n/8 )\OML/cmm/m/it/8 dx[] [] dx[]
+ []
+
+)
+pdfTeX warning (ext4): destination with the same identifier (name{page.}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.96 \end{multicols*}
+                      [3] (./summary.aux (./Kapitel1.aux) (./Kapitel2.aux) (./Kapitel3.aux) (./Kapitel4.aux) (./Kapitel5.aux))
 Package rerunfilecheck Info: File `summary.out' has not changed.
 (rerunfilecheck)             Checksum: D41D8CD98F00B204E9800998ECF8427E;0.
 
-Underfull \hbox (badness 10000) in paragraph at lines 95--95
+Underfull \hbox (badness 10000) in paragraph at lines 97--97
 [] [][]
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 95--95
+Underfull \hbox (badness 10000) in paragraph at lines 97--97
 
  []
 
  ) 
 Here is how much of TeX's memory you used:
- 15122 strings out of 478238
- 240629 string characters out of 5850456
- 660058 words of memory out of 5000000
- 33007 multiletter control sequences out of 15000+600000
- 479180 words of font info for 95 fonts, out of 8000000 for 9000
+ 15199 strings out of 478238
+ 242278 string characters out of 5850456
+ 660750 words of memory out of 5000000
+ 33056 multiletter control sequences out of 15000+600000
+ 479532 words of font info for 102 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 60i,13n,63p,1035b,601s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 60i,13n,63p,1035b,741s stack positions out of 5000i,500n,10000p,200000b,80000s
 </usr/share/texmf-dist/fonts/type1/public/amsfonts/cmextra/cmbsy8.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx8.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cmextra/cmex8.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi5.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi6.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr5.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy5.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy6.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb>
-Output written on summary.pdf (2 pages, 214924 bytes).
+Output written on summary.pdf (3 pages, 232031 bytes).
 PDF statistics:
- 97 PDF objects out of 1000 (max. 8388607)
- 62 compressed objects within 1 object stream
+ 100 PDF objects out of 1000 (max. 8388607)
+ 64 compressed objects within 1 object stream
  9 named destinations out of 1000 (max. 500000)
  20491 words of extra memory for PDF output out of 20736 (max. 10000000)
 
