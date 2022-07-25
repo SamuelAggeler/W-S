@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022/Arch Linux) (preloaded format=pdflatex 2022.5.18)  25 JUL 2022 22:42
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022/Arch Linux) (preloaded format=pdflatex 2022.5.18)  25 JUL 2022 22:47
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -455,7 +455,7 @@ Package: centernot 2016/05/16 v1.4 Centers the not symbol horizontally (HO)
 File: l3backend-pdftex.def 2022-04-14 L3 backend support: PDF output (pdfTeX)
 \l__color_backend_stack_int=\count309
 \l__pdf_internal_box=\box102
-) (./summary.aux (./Kapitel1.aux) (./Kapitel2.aux) (./Kapitel3.aux) (./Kapitel4.aux) (./Kapitel5.aux))
+) (./summary.aux (./Kapitel1.aux) (./Kapitel2.aux) (./Kapitel3.aux) (./Kapitel4.aux) (./Kapitel5.aux) (./Kapitel6.aux))
 \openout1 = `summary.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 83.
@@ -719,44 +719,42 @@ Underfull \hbox (badness 10000) in paragraph at lines 11--15
  []
 
 
-Overfull \hbox (50.87033pt too wide) detected at line 20
-\U/msb/m/n/8 P\OT1/cmr/m/n/8 [\OML/cmm/m/it/8 X[] \OMS/cmsy/m/n/8 ^^T \OML/cmm/m/it/8 a[]; [] ; X[] \OMS/cmsy/m/n/8 ^^T \OML/cmm/m/it/8 b\OT1/cmr/m/n/8 ] = [][]  [] [][] \OML/cmm/m/it/8 f\OT1/cmr/m/n/8 (\OML/cmm/m/it/8 x[]; [] ; x[]\OT1/cmr/m/n/8 )\OML/cmm/m/it/8 dx[] [] dx[]
- []
-
-
 Overfull \hbox (14.94264pt too wide) detected at line 27
 [][]  [] [][] \OML/cmm/m/it/8 ^^^\OT1/cmr/m/n/8 (\OML/cmm/m/it/8 x[]; [] ; x[]\OT1/cmr/m/n/8 ) [] \OML/cmm/m/it/8 f\OT1/cmr/m/n/8 (\OML/cmm/m/it/8 x[]; [] ; x[]\OT1/cmr/m/n/8 )\OML/cmm/m/it/8 dx[] [] dx[]
  []
 
 )
+\openout2 = `Kapitel6.aux'.
+
+ (./Kapitel6.tex)
 pdfTeX warning (ext4): destination with the same identifier (name{page.}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.96 \end{multicols*}
-                      [3] (./summary.aux (./Kapitel1.aux) (./Kapitel2.aux) (./Kapitel3.aux) (./Kapitel4.aux) (./Kapitel5.aux))
+l.97 \end{multicols*}
+                      [3] (./summary.aux (./Kapitel1.aux) (./Kapitel2.aux) (./Kapitel3.aux) (./Kapitel4.aux) (./Kapitel5.aux) (./Kapitel6.aux))
 Package rerunfilecheck Info: File `summary.out' has not changed.
 (rerunfilecheck)             Checksum: D41D8CD98F00B204E9800998ECF8427E;0.
 
-Underfull \hbox (badness 10000) in paragraph at lines 97--97
+Underfull \hbox (badness 10000) in paragraph at lines 98--98
 [] [][]
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 97--97
+Underfull \hbox (badness 10000) in paragraph at lines 98--98
 
  []
 
  ) 
 Here is how much of TeX's memory you used:
- 15199 strings out of 478238
- 242278 string characters out of 5850456
- 660750 words of memory out of 5000000
- 33056 multiletter control sequences out of 15000+600000
+ 15227 strings out of 478238
+ 243011 string characters out of 5850456
+ 661096 words of memory out of 5000000
+ 33077 multiletter control sequences out of 15000+600000
  479532 words of font info for 102 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  60i,13n,63p,1035b,741s stack positions out of 5000i,500n,10000p,200000b,80000s
 </usr/share/texmf-dist/fonts/type1/public/amsfonts/cmextra/cmbsy8.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx8.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cmextra/cmex8.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi5.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi6.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr5.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy5.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy6.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb>
-Output written on summary.pdf (3 pages, 232031 bytes).
+Output written on summary.pdf (3 pages, 232315 bytes).
 PDF statistics:
  100 PDF objects out of 1000 (max. 8388607)
  64 compressed objects within 1 object stream

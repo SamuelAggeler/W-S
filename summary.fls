@@ -756,6 +756,9 @@ INPUT Kapitel4.aux
 INPUT ./Kapitel5.aux
 INPUT Kapitel5.aux
 INPUT Kapitel5.aux
+INPUT ./Kapitel6.aux
+INPUT Kapitel6.aux
+INPUT Kapitel6.aux
 OUTPUT summary.aux
 INPUT /usr/share/texmf-dist/tex/latex/microtype/mt-cmr.cfg
 INPUT /usr/share/texmf-dist/tex/latex/microtype/mt-cmr.cfg
@@ -928,6 +931,15 @@ INPUT ./Kapitel5.tex
 INPUT Kapitel5.tex
 INPUT ./Kapitel5.tex
 INPUT Kapitel5.tex
+INPUT ./Kapitel6.tex
+OUTPUT Kapitel6.aux
+INPUT ./Kapitel6.tex
+INPUT ./Kapitel6.tex
+INPUT ./Kapitel6.tex
+INPUT ./Kapitel6.tex
+INPUT Kapitel6.tex
+INPUT ./Kapitel6.tex
+INPUT Kapitel6.tex
 INPUT summary.aux
 INPUT ./Kapitel1.aux
 INPUT Kapitel1.aux
@@ -944,6 +956,9 @@ INPUT Kapitel4.aux
 INPUT ./Kapitel5.aux
 INPUT Kapitel5.aux
 INPUT Kapitel5.aux
+INPUT ./Kapitel6.aux
+INPUT Kapitel6.aux
+INPUT Kapitel6.aux
 INPUT ./summary.out
 INPUT ./summary.out
 INPUT /usr/share/texmf-dist/fonts/type1/public/amsfonts/cmextra/cmbsy8.pfb
