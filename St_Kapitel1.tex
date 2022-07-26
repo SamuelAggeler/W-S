@@ -1,4 +1,11 @@
 \sep
 \Def[1.1] \newline
 Ein Schätzer ist eine Zufallsvariable \(T : \Omega \rightarrow \R \) der Form \[ T = t(X_1, \dots , X_n)\] wobei \(t : \R^n \rightarrow \R\)
- 
+\Def[1.2] \newline
+Ein Schätzer T heisst erwartungstreu für \( \theta \), falls für alle \( \theta \in \Theta\) gilt \[ \mathbb{E}[T] = \theta\]
+\Bem[1.2A] \newline
+Interpretation: Im Mittel(über alle denkbaren Realisationen \(\mathcal{W}\)) schätzt T also richtig, und zwar unabhängig davon, welches Model \(\mathbb{P}_\theta \) zu Grunde liegt.
+\Def[1.3] Sei \(\theta \in \Theta \) und T ein Schätzer. Der Bias(erwartete Schätzfehler) von T im Modell \( \mathbb{P}_\theta\) ist definiert als \[ \mathbb{E}_\theta - \theta\]
+Der mittlere quadratische Schätzfehler(MSE) von T im Modell \( \mathbb{P}_\theta\) ist definiert als \[\text{MSE}_\theta[T] := \mathbb{E}[(T - \theta)^2]\]
+\Bem[1.3A] \newline
+Man kannn den MSE zerlegen als \[ \text(MSE)_\theta[T] = \mathbb{E}_\theta[(T - \theta)^2] = \text{Var}_\theta[T] + (\mathbb{E}_\theta[T] - \theta)^2\]
