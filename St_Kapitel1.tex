@@ -9,3 +9,14 @@ Interpretation: Im Mittel(über alle denkbaren Realisationen \(\mathcal{W}\)) sc
 Der mittlere quadratische Schätzfehler(MSE) von T im Modell \( \mathbb{P}_\theta\) ist definiert als \[\text{MSE}_\theta[T] := \mathbb{E}[(T - \theta)^2]\]
 \Bem[1.3A] \newline
 Man kannn den MSE zerlegen als \[ \text(MSE)_\theta[T] = \mathbb{E}_\theta[(T - \theta)^2] = \text{Var}_\theta[T] + (\mathbb{E}_\theta[T] - \theta)^2\]
+\Def[1.4] \newline
+Die Likelihood-Funktion ist \[L(x_1, \dots , x_n; \theta) := \left.
+    \begin{cases}
+    p_{x}(x_1, \dots , x_n; \theta) & \text{falls disk} \\
+    f_{x}(x_1, \dots , x_n; \theta) & \text{falls stet}
+\end{cases}
+\right.\]
+\Def[1.5] \newline
+Für jedes \(x_1, \dots , x_n\), sei \(t_{ML}(x_1, \dots, x_n) \in \R\) der Wert, der \(\theta \rightarrowtail L(x_1, \dots , x_n; \theta )\) als Funktion von \( \theta \) maximiert. D.h
+\[L(x_1, \dots , x_n; t_{ML}(x_1, \dots , x_n)) = \max_{\theta \in \Theta} L(x_1, \dots , x_n; \theta)\]
+Ein Maximum-Likelihood-Schätzer (ML-Schätzer) \(T_{ML}\) für \( \theta \) wird definiert durch \[ T_{ML} = t_{ML}(X_1, \dots , X_n)\]
