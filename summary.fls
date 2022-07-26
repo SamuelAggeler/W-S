@@ -1,7 +1,7 @@
-PWD /home/samuel/Desktop/Term4/WUS
+PWD /home/samuel/Desktop/4term/W-S
 INPUT /usr/share/texmf-dist/web2c/texmf.cnf
 INPUT /var/lib/texmf/web2c/pdftex/pdflatex.fmt
-INPUT /home/samuel/Desktop/Term4/WUS/summary.tex
+INPUT /home/samuel/Desktop/4term/W-S/summary.tex
 OUTPUT summary.log
 INPUT /usr/share/texmf-dist/tex/latex/extsizes/extarticle.cls
 INPUT /usr/share/texmf-dist/tex/latex/extsizes/extarticle.cls
@@ -906,6 +906,11 @@ INPUT Kapitel3.tex
 INPUT /usr/share/texmf-dist/fonts/tfm/public/cm/cmsl8.tfm
 INPUT /usr/share/texmf-dist/fonts/tfm/public/cm/cmr17.tfm
 INPUT /var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map
+INPUT ./Gleichverteilt.png
+INPUT ./Gleichverteilt.png
+INPUT Gleichverteilt.png
+INPUT ./Gleichverteilt.png
+INPUT ./Gleichverteilt.png
 INPUT ./exp_Dichte_Verteilung.png
 INPUT ./exp_Dichte_Verteilung.png
 INPUT exp_Dichte_Verteilung.png

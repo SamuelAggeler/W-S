@@ -33,21 +33,23 @@ Sei \( \lambda > 0\) eine positive reelle Zahl. Eine Zufallsvariable X heisst Po
 \Satz[3.23 Poisson-Approx. der Binom. verteil.] \newline
 Sei \( \lambda > 0\). Für jedes \( n \geq 1 \) seien \( X_n \sim Bin(n, \frac{\lambda}{n})\)  Zufallsvariablen. Dann gilt \[ \forall k \in \N \ \lim_{n \rightarrow \infty } \mathbb{P}[X_n = k] = \mathbb{P}[N =k]\]
 \Def[3.25 Stetig verteilte Zufallsvariablen] \newline
-Eine Zufallsvariable \( X: \omega \rightarrow \R \) heisst stetig, wenn ihre Verteilungsfunktion \(F_X \) wie folgt geschrieben werden kann \[F_X(a) = \int_{-\infty}^{a} f(x)dx \ \text{für alle a in} \ \R\] wobei \(f: \R \rightarrow \R_+\) eine nicht-negative Funktion ist. Wir nennen dann f Dichte von X.
+Eine Zufallsvariable \( X: \omega \rightarrow \R \) heisst stetig, wenn ihre Verteilungsfunktion \(F_X \) wie folgt geschrieben werden kann \[F_X(a) = \int_{-\infty}^{a} f(x)dx \ \text{für alle a in} \ \R\] wobei \(f: \R \rightarrow \R_+\) eine nicht-negative Funktion ist. Wir nennen dann f Dichte von X. \newline
 \Bem[3.25A] \newline
-\(f(x)dx \) ist die Wahrscheinlichkeit, dass X Werte in \( [x, x+ dx]\) annimmt.
+\(f(x)dx \) ist die Wahrscheinlichkeit, dass X Werte in \( [x, x+ dx]\) annimmt. Die Stetigkeit von \(F_X \)folgt dabei aus der Definition (3.25). Ausserdem folgt aus Satz 3.1, dass \[ \forall x \in \R  \ \mathbb{P}[X = x] = 0\]Die Wahrscheinlichkeit für das Auftreten jedes einzelnen Werts der Zufallsvariablen beträgt exakt Null\newline
+\Bem[3.25B] \newline
+Von f zu \( F_X\) : Sei X eine stetige Z.V und f die Dichte. \(F_X\) können wir mit \[F_X(x) = \int_{-\infty}^x f(y)dy\]. Es liegt nahe, dass wir die Dichte mittels Ableiten herausfinden. \newline
 \Theo[3.26] \newline
 Sei X eine Zufallsvariable. Die Verteilungsfunktion \(F_X\) sei stetig und Stückweise \( C^1\), d.h es gibt \(x_0 = -\infty < x_1 < \dots < x_{n-1} < x_n = + \infty\), sodass \(F_X\) auf jedem Intervall \( (x_i, x_{i+1})\) Element von \(C^1\) ist. Dann ist X eine stetige Zufallsvariable und die Dichte f kann konstruiert werden, indem man folgendes festlegt \[ \forall x \in (x_i, x_{i+1}) \ f(x) = F'_X(x)\]
-\Def[3.27 Gleichverteilung auf [a.b]] \newline
+\Def[3.27 Gleichverteilung auf [a,b]] \newline
 Eine stetige Zufallsvariable X heisst gleichverteilt auf \([a,b]\) falls ihre Dichte gegeben ist durch \[ f_{a,b}(x) = \begin{cases}
     \frac{1}{b-a} & x \in [a,b] \\
     0 & x \notin [a,b]
 \end{cases}\]
 Wir schreiben \(X \sim \mathcal{U}([a,b])\) \newline
+\includegraphics[scale=0.1]{Gleichverteilt.png}
 \Bem[3.27A]
 \begin{itemize}
     \item Die Wahrscheinlichkeit in einem Interval \( [c, c + \ell] \subset [a,b]\) zu fallen ist lediglich abhängig von dessen Länge \( \ell\) \[\mathbb{P}[X \in [c, c + \ell ]] = \frac{\ell}{b-a}\]
-    \item 
     \item Die Verteilungsfunktion X ist gegeben durch \[ F_X(x) = \begin{cases}
         0 & x < a \\
         \frac{x-a}{b-a} & a \leq x \leq b \\
