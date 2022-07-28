@@ -1,21 +1,41 @@
 \sep
 \Def[4.1] \newline
-Sei \( X : \omega \rightarrow \R_+ \) eine Zufallsvariable mit nicht-negativen Werten. Dann heisst \[ \mathbb{E}[X] = \int_0^\infty (1-F_X(x)) dx\] der Erwartungswert von X.
+Sei \( X : \omega \rightarrow \R_+ \) eine Zufallsvariable mit nicht-negativen Werten. Dann heisst \[ \mathbb{E}[X] = \int_0^\infty (1-F_X(x)) dx\] der Erwartungswert von X. \newline
 \Bem[4.2] \newline
-Der Erwartungswert kann sowohl endliche als auch nicht endliche Werte annehmen.
+Der Erwartungswert kann sowohl endliche als auch nicht endliche Werte annehmen. Für allgemeinen ZV. definieren wir den Erwartungswert durch Zerlegen in einen positiven und negativen Teil. Die Beiden Zufallsvariablen sind wie folgt definiert : \[X_+(\omega) = \begin{cases}
+    X(\omega) & \text{falls} X(\omega) \geq 0 \\
+    0 & \text{falls} X(\omega) < 0
+\end{cases}\]
+und \[X_-(\omega) = \begin{cases}
+    -X(\omega) & \text{falls} X(\omega) \leq 0 \\
+    0 & \text{falls} X(\omega) > 0
+\end{cases}\]
+\(X_+ \) und \(X_-\) sind nicht negative Zufallsvariablen. Zudem gilt \(X = X_+ - X_-\) als auch \( \abs{X} = X_+ + X_-\)
 \Satz[4.3] \newline
 Sei X eine nicht-negative Zufallsvariable. Dann gilt \[ \mathbb{E}[X] \geq 0\]
-\Def[4.4] Sei X eine Zufallsvariable. Falls \(\mathbb{E}[\abs{X}] < \infty \), dann heisst \[ \mathbb{E}[X] = \mathbb{E}[X_+] - \mathbb{E}[X_-]\] Erwartungswert von X.
-\Satz[4.6] Sei \( X: \omega \rightarrow \R \) eine diskrete Zufallsvariable dessen Werte in W (endlich oder abzähbar ) fast sicher liegen. Sei \( \phi : \R \rightarrow \R \) eine Abbildung. Dann gilt \[ \mathbb{E}[\phi(X)] = \sum_{x \in W} \phi(x) \cdot \mathbb{P}[X = x]\]
-\Satz[4.7] Sei \( X: \omega \rightarrow \R \) eine diskrete Zufallsvariable mit Werten in W (endlich oder abzähbar). Für jedes \(\phi : \R \rightarrow \R \) gilt \[ \mathbb{E}[\phi(X)] = \sum_{x \in W} \phi(x) \mathbb{P}[\phi(X = x)]\]
+\Def[4.4] Sei X eine Zufallsvariable. Falls \(\mathbb{E}[\abs{X}] < \infty \), dann heisst \[ \mathbb{E}[X] = \mathbb{E}[X_+] - \mathbb{E}[X_-]\] Erwartungswert von X. \newline
+\Bsp[4.5] \newline Sei X eine Bernoulli Z.V mit Parameter p \[\mathbb{E}[X] = p\] Sei X Poisson-verteilt mit Parameter \( \lambda > 0\) \[\mathbb{E}[X] = \lambda\] Sei \(A \in \mathcal{F}\) ein Ereignis. Sei \( \mathbbm{1}_A \) die Indikatorfunktion auf A, \[ \forall \omega \in \Omega \ \mathbbm{1}_A(\omega) = \begin{cases}
+    0 & \text{falls} \omega \notin A \\
+    1 & \text{falls} \omega \in A
+\end{cases}\]
+Dann ist \(\mathbbm{1}_A\) eine Zufallsvariable. Per Definition gilt \[\mathbb{P}[X = 0] = 1 - \mathbb{P}[A] \ \text{und} \ \mathbb{P}[X=1] = \mathbb{P}[A]\]
+Somit ist \(\mathbbm{1}_A\) eine Bernoulli Z.V mit Paramter \( \mathbb{P}[A] \ \implies \mathbb{E}[\mathbbm{1}_A] = \mathbb{P}[A]\) \newline
+\Satz[4.6] Sei \( X: \omega \rightarrow \R \) eine diskrete Zufallsvariable dessen Werte in W (endlich oder abzähbar ) fast sicher liegen.Dann gilt \[ \mathbb{E}[X] = \sum_{x \in W} x \cdot \mathbb{P}[X = x]\]
+\Satz[4.7] Sei \( X: \omega \rightarrow \R \) eine diskrete Zufallsvariable mit Werten in W (endlich oder abzähbar). Für jedes \(\phi : \R \rightarrow \R \) gilt \[ \mathbb{E}[\phi(X)] = \sum_{x \in W} \phi(x) \mathbb{P}[(X = x)]\]
 \Satz[4.8] Sei X eine stetige Zufallsvariable mit Dichte f. Dann gilt \[\mathbb{E}[X] = \int_{-\infty}^{\infty} x \cdot f(x)dx\]
+\Bsp[4.8A] Gleichverteilung auf \([a,b]\) \[\mathbb{E}[X] = \frac{a + b}{2}\] Exponentialverteilung mit \( \lambda > 0 \) \[\mathbb{E}[X] = \frac{1}{\lambda}\]
 \Theo[4.9] Sei X eine stetige Zufallsvariable mit Dichte f. Sei \(\phi : \R \rightarrow \R \) eine Abbildung, sodass \( \phi(X )\) eine Zufallsvariable ist. Dann gilt \[ \mathbb{E}[\phi(X)] = \int_{-\infty}^{\infty} \phi(x)f(x)dx\]
 \Theo[4.10 linearität des Erwartungswert] \newline
 Seien \(X, Y : \omega \rightarrow \R \) Zufallsvariablen, sei \(\lambda \in \R\). Falls die Erwartungswerte wohldefiniert sind gilt \begin{itemize}
     \item \(\mathbb{E}[ \lambda \cdot X ] = \lambda \cdot \mathbb{E}[X]\)
     \item \(\mathbb{E}[X + Y] = \mathbb{E}[X] + \mathbb{E}[Y]\)
 \end{itemize}
-\Bem[4.11] Die Zufallsvariablen müssen dabei nicht unabhängig sein.
+\Bem[4.11] \newline 
+Die Zufallsvariablen müssen dabei nicht unabhängig sein. \newline
+\Bem[4.12] \newline
+Anwendung1 : Der Erwartungswert einer binomialverteilten Zufallsvariable. Sei \( n \geq 1\) und \( 0 \leq p \leq 1 \). Sei S eine binomialverteilte Zufallsvariable mit Parametern n und p. \[\mathbb{E}[S] = \sum_{k=0}^{n} \cdot \binom{n}{k} p^k (1-p)^{n-k}\]
+Wir können allerdings davon ausgehen, dass S die gleiche Verteilung hat wie \(S_n = X_1 + \dots + X_n\) wobei \(X_1 , \dots , X_n \) u.i.v Bernoulli Z.V mit Parameter p sind. Durch anwendung der linearität erhalten wir \[ \mathbb{E}[S] = \mathbb{E}[S_n] = np\]
+Anwendung2 : Rechnen mit Normalverteilungen mit Parameter m und \( \sigma^2\). Wenn X eine Normalverteilung mit Parametern m und \( \sigma^2\) ist, dann hat sie die gleiche Verteilung wie \( m + \sigma \cdot Y\), wobei Y eine standardnormalverteilte Z.V ist. Aus der Linearität des Erwartungswertes folgt \[ \mathbb{E}[X] = \mathbb{E}[m + \sigma \cdot Y] = m + \sigma \mathbb{E}[Y]\] Also müssen wir nur \( \mathbb{E}[Y]\) berechnen. \[\mathbb{E}[Y] = \int_{-\infty}^{\infty} x \cdot f_{0,1}(x) dx = 0\] da \(X x \cdot f_{0,1}(x)\) eine ungerade funktion ist. \[\mathbb{E}[X] = m\]
 \Theo[4.13] Seien X,Y zwei Zufallsvariablen. Falls X und Y unabhängig sind, dann gilt \[ \mathbb{E}[XY] = \mathbb{E}[X]\mathbb{E}[Y]\]
 \Satz[4.14 Stetige Extremwertformel] \newline
 Sei X eine Zufallsvariable, sodass \( X \geq 0 \) fast sicher gilt. Dann gilt \[ \mathbb{E}[X] = \int_0^{\infty} \mathbb{P}[X \geq x]dx\]
@@ -47,8 +67,8 @@ Seien X,Y zwei Zufallsvariablen, sodass \[ X \leq Y f.s\] gilt. Falls beide Erwa
 Sei X eine nicht-negative Zufallsvariable. Für jedes \( a > 0\) gilt dann \[ \mathbb{P}[X \geq a ] \leq \frac{\mathbb{E}[X]}{a}\]
 \Theo[4.21 Jensen Ungleichung] \newline
 Sei X eine Zufallsvariable. Sei \( \phi \R \rightarrow \R \) eine konvexe Funktion. Falls \( \mathbb{E}[\phi(X)]\) und \( \mathbb{E}[X]\) wohldefiniert sind, gilt \[ \phi(\mathbb{E}[X] \leq \mathbb{E}[\phi(X)])\]
-\Def[4.22] Sei X eine Zufallsvariable, sodass \( \mathbb{E}[X^2] < \infty \). Wir definieren die Varianz von X durch \[ \sigma_X^2 = \mathbb{E}[(X-m)^2, \ \text{wobei} \ m=\mathbb{E}[X]]\] DIe Wurzel aus \(\sigma_X^2\) nennen wir die Standardabweichung von X
-\Satz[4.24] \newline
+\Def[4.22] Sei X eine Zufallsvariable, sodass \( \mathbb{E}[X^2] < \infty \). Wir definieren die Varianz von X durch \[ \sigma_X^2 = \mathbb{E}[(X-m)^2], \ \text{wobei} \ m=\mathbb{E}[X]\] DIe Wurzel aus \(\sigma_X^2\) nennen wir die Standardabweichung von X \newline
+\Satz[4.24 Chebychev Ungleichung] \newline
 Sei X eine Zufallsvariable mit \( \mathbb{E}[X^2] < \infty\). Dann gilt für jedes \( a \geq 0\) \[ \mathbb{P}[\abs{X -m} \geq a] \leq \frac{\sigma_X^2}{a^2}, \text{wobei m} = \mathbb{E}[X]\]
 \Satz[4.25] Grundlegende Eigenschaften der Varianz \newline
 \begin{itemize}
