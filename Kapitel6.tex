@@ -1,3 +1,16 @@
 \sep
 \Theo[6.1] \newline
-Sei \( \mathbb{E}[\abs{x_1}] < \infty \). Setze \(m = \mathbb{E}[X_1]\) dann gilt \[ \lim_{n \rightarrow \infty} \frac{X_1 + \dots + X_n}{n} = m \text{a.s}\]
+Sei \( \mathbb{E}[\abs{x_1}] < \infty \). Setze \(m = \mathbb{E}[X_1]\) dann gilt \[ \lim_{n \rightarrow \infty} \frac{X_1 + \dots + X_n}{n} = m \ \ \text{a.s}\]
+\Bem[6.2] \newline
+In der Aussage des Satzes mag es überraschen, dass die Annahme und die Definition von m such nur auf \(X_1\) beziehen. Da die Zufallsvariable aber u.i.v sind, haben wir auch \( \mathbb{E}[\abs{X_i}] < \infty \) und \(m = \mathbb{E}[X_i]\) für jedes i.
+\Bsp[6.2A] \newline
+Sei \(X_1, X_2, \dots \) eine Folge von u.i.v Bernoulli Z.V mit Paramter p. Dann ist \[ \lim_{n \rightarrow  \infty } \frac{X_1 + \dots + X_n }{n} = p \ \ \text{a.s}\]
+\Bsp[6.2B] \newline
+Sei \(T_1, T_2, \dots \) eine u.i.v Folge von exponential verteilten Zufallsvariablen mit Paramter \( \lambda \). Dann gilt \[ \lim_{n \rightarrow \infty} \frac{T_1 + \dots + T_n }{n} = \lambda \ \ \text{a.s}\]
+\Def[6.3] \newline
+Seien \( (X_n)_{n \in \N }\) und X Zufallsvariablen. Wir schreiben \[X_n \approx X \ \text{as} \ \rightarrow \infty \]
+falls für jedes \( x \in \R \) \[\lim_{n \rightarrow \infty } \mathbb{P}[X_n \leq x ] = \mathbb{P}[X \leq x]\]
+\Bsp[6.3A] \newline
+Für jedes n, sei \(X_n \) eine Bernoulli Zufallsvariable mit Parameter \(p_n \in [0,1 ]\). Falls \( \lim_{n \rightarrow \infty } p_n = p \) gilt, erhalten wir \[X_n \approx X \ \text{für} \ n \rightarrow \infty\] 
+\Theo[6.4 ZGWS] \newline
+Nehme an, dass der Erwartungswert \(\mathbb{E}[X_1^2]\) wohldefiniert und endlich ist. Setze \(m = \mathbb{E}[X_1]\) und \( \sigma^2 = \text{Var}(X_1)\), dann gilt folgender Grenzwert \[ \mathbb{P}[\frac{S_n - n \cdot m }{\sqrt{\sigma^2n}} \leq a] \rightarrow \Phi(a) = \frac{1}{\sqrt{2 \pi}} \int_{-\infty}^{a} e^{-x^2/2}dx\]

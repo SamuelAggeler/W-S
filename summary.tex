@@ -21,7 +21,7 @@
 
 \usepackage{float}
 \usepackage{graphicx}
-
+\usepackage{pdfpages}
 \usepackage{comment}
 \usepackage{amsmath}
 \usepackage{amssymb}
@@ -38,6 +38,14 @@
 \newenvironment{rcases}
   {\left.\begin{aligned}}
   {\end{aligned}\right\rbrace}
+
+  \usepackage{afterpage}
+
+\newcommand\blankpage{%
+    \null
+    \thispagestyle{empty}%
+    \addtocounter{page}{-1}%
+    \newpage}
   
 \usepackage{enumitem}
 \setlist{noitemsep,topsep=3pt,parsep=3pt,partopsep=3pt,leftmargin=18pt}
@@ -52,6 +60,8 @@
 %\renewcommand*{\part}{\ }
 % package to define custom environments
 \usepackage{environ}
+
+\makeatother
 % boolean variable to show contents
 \newif\ifshowwarmup
 %\showwarmuptrue % set it to true
@@ -96,5 +106,6 @@
 \include{Kapitel5.tex}
 \include{Kapitel6.tex}
 \include{St_Kapitel1.tex}
+\include{St_Kapitel2.tex}
 \end{multicols*}
 \end{document}
