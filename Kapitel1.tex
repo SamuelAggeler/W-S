@@ -30,10 +30,10 @@ Für eine Sigma-Algebra \(\mathcal{F} \ \text{auf} \ \omega\) gilt:
     \item \( \mathbb{P}[\emptyset] = 0\)
     \item \(A_1, \dots A_k\) paarweise disjunkte Ereignisse, \[\mathbb{P}[A_1 \cup \dots \cup A_k] = \mathbb{P}[A_1] + \dots \mathbb{P}[A_k]\]
     \item \( \mathbb{P}[A^c] = 1 - \mathbb{P}[A]\)
-    \item \(\mathbb{P}[A \cup B ] = \mathbb{P}[A] - \mathbb{P}[B] - \mathbb{P}[A \cap B]\)
+    \item \(\mathbb{P}[A \cup B ] = \mathbb{P}[A] + \mathbb{P}[B] - \mathbb{P}[A \cap B]\)
 \end{itemize}
 \Satz[1.8] Seien \(A,B \in \mathcal{F}\) dann gilt \[ A \subset B \implies \mathbb{P}[A] \leq \mathbb{P}[B]\]
-\Satz[1.9] Sei \( A_1, A_2, \dots \) eine Folge von nicht notwendigerweise disjunkten Ereignissen, dann gilt: \[ \mathbb{P}[\bigcup_{i=1}^{\infty} A_i \leq \sum_{i=1}^{\infty} \mathbb{P}[A_i]]\]
+\Satz[1.9] Sei \( A_1, A_2, \dots \) eine Folge von nicht notwendigerweise disjunkten Ereignissen, dann gilt: \[ \mathbb{P}[\bigcup_{i=1}^{\infty} A_i] \leq \sum_{i=1}^{\infty} \mathbb{P}[A_i]\]
 \Def[1.13 Bedingte Wahrscheinlichkeit] \newline
 Sei \((\omega, \mathcal{F}, \mathbb{P})\) ein Wahrscheinlichkeitsraum. Seien A, B zwei Ereignisse mit \( \mathbb{P}[B] > 0\) \[\mathbb{P}[A|B] = \frac{\mathbb{P}\left[A \cap B\right]}{\mathbb{P}\left[B\right]}\]
 \Satz[1.16 Gesetz der totalen Wahrscheinlichkeit] \newline
