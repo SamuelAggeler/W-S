@@ -1,14 +1,20 @@
 \sep
+\section{Gemeinsame Verteilung}
+\subsection{Diskrete gemeinsame Verteilungen}
 \Def[5.1] \newline
 Seien \(X_1, \dots , X_n\) n diskrete Zufallsvariablen, sei \( W_i \subset \R \) endlich oder abzählbar, wobei \(X_i \in W_i\) fast sicher gilt. Die gemeinsame Verteilung von \((X_1, \dots , X_n)\) ist eine Familie \( p = (p(x_1, \dots , x_n))_{x_1 \in W_1, \dots ,x_n \in W_n}\), wobei jedes Mitglied definiert ist durch \[ p(x_1, \dots , x_n) = \mathbb{P}[X_1 = x_1 , \dots , X_n = x_n]\]
 \Satz[5.2] \newline
 Eine gemeinsame Verteilung von Zufallsvariablen \( X_1, \dots , X_n\) erfüllt \[ \sum_{x_1 \in W_1, \dots , x_n \in W_n } p(x_1, \dots, x_n ) = 1\]
+\subsection{Verteilung des Bildes}
 \Satz[5.3] \newline
 Sei \( n \geq 1 \) und seien \( \phi : \R^n \rightarrow \R \) Abbildungen. Seien \(X_1, \dots, X_n\) n diskrete Zufallsvariablen in \( (\Omega, \mathcal{F}, \mathbb{P})\), welche fast sicher Werte in endlichen oder abzählbaren Mengen \(W_1, \dots , W_n\) annehmen. Dann ist \( Z = \phi(X_1, \dots , X_n)\) eine diskrete Zufallsvariable, welche fast sicher Werte in W = \(\phi(W_1 \times \dots \times W_n)\) annimmt. Zudem ist die Verteilung von Z gegeben durch \[ \forall z \in W \ \mathbb{P}[Z=z]= \] \[\sum_{\substack{x_1 \in W_1, \dots , x_n \in W_n \\ \phi(x_1, \dots , x_n) = z}} \ \mathbb{P}[X_1 = x_1 , \dots , X_n = x_n]\]
+\subsection{Randverteilung}
 \Satz[5.4] \newline 
 Seien \(X_1, \dots , X_n\) n diskrete Zufallsvariablen mit gemeinsamer Verteilung \( p = (p(x_1, \dots , x_n ))_{x_1 \in W_1, \dots , x_n \in W_n}\). Für jedes i gilt \[ \forall z \in W_i \ \mathbb{P}[X_i = z] =\] \[ \sum_{x_1, \dots x_{i-1}, x_{i+1}, \dots x_n} p(x_1, \dots , x_{i-1}, z , x_{i+1}, \dots , x_n)\]
+\subsection{Erwartungswert des Bildes}
 \Satz[5.5] \newline
 Seien \( X_1 , \dots , X_n \) n diskrete Zufallsvariablen mit gemeinsamer Verteilung \(p = (p(x_1, \dots , x_n))_{x_1 \in W_1, \dots , x_n \in W_n}\). Sei \(\phi: \R^n \rightarrow \R \), dann gilt \[ \mathbb{E}[\phi(X_1, \dots, X_n)] = \] \[\sum_{x_1, \dots , x_n } \phi(x_1, \dots , x_n)p(x_1, \dots , x_n)\] solange die Summe wohldefiniert ist. \newline
+\subsection{Unabhängigkeit}
 \Satz[5.6] \newline
 Seien \(X_1, \dots , X_n\) n diskrete Zufallsvariablen mit gemeinsamer Verteilung \(p = (p(x_1, \dots , x_n))_{x_1 \in W_1 , \dots , x_n \in W_n}\). Die folgenden Aussagen sind äquivalent
 \begin{itemize}
@@ -16,16 +22,19 @@ Seien \(X_1, \dots , X_n\) n diskrete Zufallsvariablen mit gemeinsamer Verteilun
     \item \(p(x_1, \dots , x_n ) = \mathbb{P}[X_1 = x_1 ] \cdot \cdot \cdot \mathbb{P}[X_n = x_n ]\) für jedes \(x_1 \in W_1 , \dots , x_n \in W_n\)
     \item 
 \end{itemize}
+\subsection{Stetige Gemeinsame Verteilung}
 \Def[5.7] \newline
 Sei \( n \geq 1\). Wir sagen, dass die Zufallsvariablen \(X_1 , \dots , X_n : \Omega \rightarrow \R \) eine stetige gemeinsame Verteilung besitzen, falls eine Abbildung \( f: \R^n \rightarrow \R_+ \) existiert, sodass \[ \mathbb{P}[X_1 \leq a_1, \dots , X_n \leq b] = \] \[\int_{-\infty}^{a_1} \dots \int_{-\infty}^{a_n} f(x_1, \dots , x_n) dx_n \dots dx_1\]
-für jedes  \( a_1 , \dots , a_n \in \R \) gilt. Obige Abbildung f nennen wir gerade gemeinsame Dichte von \((X_1, \dots , X_n)\)
+für jedes  \( a_1 , \dots , a_n \in \R \) gilt. Obige Abbildung f nennen wir gerade gemeinsame Dichte von \((X_1, \dots , X_n)\) \newline
 \Satz[5.9] \newline
-Sei f die geminsame Dichte der Zufallsvariablen \((X_1, \dots , X_n)\). Dann gilt \[ \int_{-\infty}^\infty \dots \int_{-\infty}^\infty f(x_1, \dots , x_n )dx_n \dots dx_1 = 1\]
+Sei f die gemeinsame Dichte der Zufallsvariablen \((X_1, \dots , X_n)\). Dann gilt \[ \int_{-\infty}^\infty \dots \int_{-\infty}^\infty f(x_1, \dots , x_n )dx_n \dots dx_1 = 1\]
 \Bem[5.9a] \newline
-Nehme zum Beispiel zwei Zufallsvariablen X,Y. Intuitiv beschreibt \(f(x,y)dxdy\) dabei die Wahrscheinlichkeit, dass ein Zufallspunkt (X,Y) einem Rechteck \([x, x + dx] \times [y,y + dy]\) liegt.
+Nehme zum Beispiel zwei Zufallsvariablen X,Y. Intuitiv beschreibt \(f(x,y)dxdy\) dabei die Wahrscheinlichkeit, dass ein Zufallspunkt (X,Y) einem Rechteck \([x, x + dx] \times [y,y + dy]\) liegt. \newline
+\subsection{Erwartungswerrt under Abbildungen}
 \Satz[5.10] \newline
 Sei \( \phi: \R \rightarrow \R \) eine Abbildung. Falls \( X_1, \dots , X_n\) eine gemeinsame Dichte f besitzen, dann lässt sich der Erwartungswert der Zufallsvariable Z \( = \phi (X_1, \dots , X_n )\) mittels \[ \mathbb{E}[\phi(X,Y)] = \] \[\int_{-\infty}^\infty \dots \int_{-\infty}^\infty \phi(x_1 , \dots , x_n) \dots f(x_1, \dots , x_n) dx_1 \dots dx_n\]
 berechnen (solange das Integral wohldefiniert ist)
+\subsection{Unabhängigkeit stetiger Zufallsvariablen}
 \Theo[5.11] \newline
 Seien \(X_1, \dots , X_n \) Zufallsvariablen mit Dichten \(f_1, \dots , f_n\). Dann sind folgende Aussagen äquivalent
 \begin{itemize}

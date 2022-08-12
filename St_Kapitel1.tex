@@ -12,10 +12,13 @@ Man kannn den MSE zerlegen als \[ \text(MSE)_\theta[T] = \mathbb{E}_\theta[(T - 
 \Def[1.4] \newline
 Die Likelihood-Funktion ist \[L(x_1, \dots , x_n; \theta) := \left.
     \begin{cases}
-    p_{x}(x_1, \dots , x_n; \theta) & \text{falls disk} \\
-    f_{x}(x_1, \dots , x_n; \theta) & \text{falls stet}
+    p_{\overrightarrow{X}}(x_1, \dots , x_n; \theta) & \text{falls disk} \\
+    f_{\overrightarrow{X}}(x_1, \dots , x_n; \theta) & \text{falls stet}
 \end{cases}
 \right.\]
+wobei 
+\[p_{\overrightarrow{X}}(x_1, \dots , x_n; \theta) = \prod_{i=1}^n p_X(x_i;\theta)\]
+\[f_{\overrightarrow{X}}(x_1, \dots , x_n; \theta) = \prod_{i=1}^n f_X(x_i;\theta)\]
 \Def[1.5] \newline
 Für jedes \(x_1, \dots , x_n\), sei \(t_{ML}(x_1, \dots, x_n) \in \R\) der Wert, der \(\theta \rightarrowtail L(x_1, \dots , x_n; \theta )\) als Funktion von \( \theta \) maximiert. D.h
 \[L(x_1, \dots , x_n; t_{ML}(x_1, \dots , x_n)) = \max_{\theta \in \Theta} L(x_1, \dots , x_n; \theta)\]

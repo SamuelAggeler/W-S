@@ -1,4 +1,6 @@
 \sep
+\section{Zufallsvariablen und Verteilungsfunktionen}
+\subsection{Abstrakte Definition }
 \Def[2.1 Zufallsvariable] \newline
 Sei \( (\omega, \mathcal{F}, \mathbb{P})\) ein Wahrscheinlichkeitsraum. Eine Zufallsvariable ist eine Abbildung \( X : \omega \rightarrow \mathbb{R} \) so dass, für alle \( a \in \mathbb{R}\) gilt \[ \{ w \in \omega : X(w) \leq a \} \in \mathcal{F}\]
 \Bem  \newline
@@ -9,6 +11,7 @@ Für Ereignisse im Bezug auf Z:V
     \item \( \{ X \in \mathbb{Z}\} = \{ w \in \omega : X(w) \in \mathbb{Z}\}\)
 \end{itemize}
 \[ \mathbb{P}[X \leq a] = \mathbb{P}[\{X \leq a\}] = \mathbb{P}[\{w \in \omega : X(w) \leq a\}]\]
+\subsection{Verteilungsfunktion}
 \Def[2.2 Verteilungsfunktion] \newline
 Sei X eine Zufallsvariable auf einem W-Raum \( (\omega, \mathcal{F}, \mathbb{P})\). Die Verteilungsfunktion von X ist eine Funtkion \(F_X : \mathbb{R} \rightarrow [0,1]\), definiert durch \[ \forall a \in \mathbb{R} \ F_X(a) = \mathbb{P}[X \leq a]\]
 \Satz[2.3 Einfache Identität] \newline
@@ -20,11 +23,14 @@ Sei X eine Z.V aif einem Wahrscheinlichkeitsraum. Die Verteilungsfunktion \( F =
     \item F ist rechtsstetig
     \item \( \lim_{a \rightarrow -\infty} F(a) = 0 \) und \( \lim_{a \rightarrow \infty} F(a) = 1\)
 \end{itemize}
+\subsection{Unabhängigkeit von Zufallsvariablen}
 \Def[2.5] \newline
 Seien \( X_1 \dots X_n \) Zufallsvariablen auf einem W-Raum. Dann heissen \(X_1, \dots X_n \) unabhängig falls \[ \forall x_1, x_2 \dots x_n \in \R \] \[\mathbb{P}[X_1 \leq x_1 \dots X_n \leq x_n ] = \mathbb{P}[X_1 \leq x_1] \dots \mathbb{P}[X_n \leq x_n]\]
 \Satz[2.7 Gruppieren von Zufallsvariablen] \newline
 Seien \(X_1 \dots X_n\) n unabhängige Zufallsvariablen. Seien \( 1 \leq i_1 < i_2 < \dots < i_k \leq n \) Indizes und \(\phi_1 \dots \phi_k\) Abbildungen. Dann sind  \[ Y_1 = \phi_1(X_1 \dots X_{i_1}), Y_2 = \phi_2(X_{i_{1}+1}, \dots X_{i_2}), \dots \] \[Y_k = \phi_k(X_{i_{k-1}+1} \dots X_{i_k})\] unabhängig \newline
+\newline \newline
 \Def[2.8] \newline
+\subsection{Konstruktion von Zufallsvariablen}
 Eine Folge von Zufallsvariablen \(X_1, X_2, \dots \) heisst
 \begin{itemize}
     \item unabhängig falls \(X_1, \dots X_n \) unabhängig sind, für alle \(n \in  \N\)

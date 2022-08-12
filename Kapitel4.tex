@@ -1,4 +1,6 @@
 \sep
+\section{Der Erwartungswert}
+\subsection{Der allgemeine Erwartungswert}
 \Def[4.1] \newline
 Sei \( X : \omega \rightarrow \R_+ \) eine Zufallsvariable mit nicht-negativen Werten. Dann heisst \[ \mathbb{E}[X] = \int_0^\infty (1-F_X(x)) dx\] der Erwartungswert von X. \newline
 \Bem[4.2] \newline
@@ -20,11 +22,14 @@ Sei X eine nicht-negative Zufallsvariable. Dann gilt \[ \mathbb{E}[X] \geq 0\]
 \end{cases}\]
 Dann ist \(\mathbbm{1}_A\) eine Zufallsvariable. Per Definition gilt \[\mathbb{P}[X = 0] = 1 - \mathbb{P}[A] \ \text{und} \ \mathbb{P}[X=1] = \mathbb{P}[A]\]
 Somit ist \(\mathbbm{1}_A\) eine Bernoulli Z.V mit Paramter \( \mathbb{P}[A] \ \implies \mathbb{E}[\mathbbm{1}_A] = \mathbb{P}[A]\) \newline
+\subsection{Erwartungswert einer diskreten Zufallsvariable}
 \Satz[4.6] Sei \( X: \omega \rightarrow \R \) eine diskrete Zufallsvariable dessen Werte in W (endlich oder abzähbar ) fast sicher liegen.Dann gilt \[ \mathbb{E}[X] = \sum_{x \in W} x \cdot \mathbb{P}[X = x]\]
 \Satz[4.7] Sei \( X: \omega \rightarrow \R \) eine diskrete Zufallsvariable mit Werten in W (endlich oder abzähbar). Für jedes \(\phi : \R \rightarrow \R \) gilt \[ \mathbb{E}[\phi(X)] = \sum_{x \in W} \phi(x) \mathbb{P}[(X = x)]\]
+\subsection{Erwartungswert stetiger Zufallsvariablen}
 \Satz[4.8] Sei X eine stetige Zufallsvariable mit Dichte f. Dann gilt \[\mathbb{E}[X] = \int_{-\infty}^{\infty} x \cdot f(x)dx\]
 \Bsp[4.8A] Gleichverteilung auf \([a,b]\) \[\mathbb{E}[X] = \frac{a + b}{2}\] Exponentialverteilung mit \( \lambda > 0 \) \[\mathbb{E}[X] = \frac{1}{\lambda}\]
 \Theo[4.9] Sei X eine stetige Zufallsvariable mit Dichte f. Sei \(\phi : \R \rightarrow \R \) eine Abbildung, sodass \( \phi(X )\) eine Zufallsvariable ist. Dann gilt \[ \mathbb{E}[\phi(X)] = \int_{-\infty}^{\infty} \phi(x)f(x)dx\]
+\subsection{Rechnen mit Zufallsvariablen}
 \Theo[4.10 linearität des Erwartungswert] \newline
 Seien \(X, Y : \omega \rightarrow \R \) Zufallsvariablen, sei \(\lambda \in \R\). Falls die Erwartungswerte wohldefiniert sind gilt \begin{itemize}
     \item \(\mathbb{E}[ \lambda \cdot X ] = \lambda \cdot \mathbb{E}[X]\)
@@ -37,12 +42,14 @@ Anwendung1 : Der Erwartungswert einer binomialverteilten Zufallsvariable. Sei \(
 Wir können allerdings davon ausgehen, dass S die gleiche Verteilung hat wie \(S_n = X_1 + \dots + X_n\) wobei \(X_1 , \dots , X_n \) u.i.v Bernoulli Z.V mit Parameter p sind. Durch anwendung der linearität erhalten wir \[ \mathbb{E}[S] = \mathbb{E}[S_n] = np\]
 Anwendung2 : Rechnen mit Normalverteilungen mit Parameter m und \( \sigma^2\). Wenn X eine Normalverteilung mit Parametern m und \( \sigma^2\) ist, dann hat sie die gleiche Verteilung wie \( m + \sigma \cdot Y\), wobei Y eine standardnormalverteilte Z.V ist. Aus der Linearität des Erwartungswertes folgt \[ \mathbb{E}[X] = \mathbb{E}[m + \sigma \cdot Y] = m + \sigma \mathbb{E}[Y]\] Also müssen wir nur \( \mathbb{E}[Y]\) berechnen. \[\mathbb{E}[Y] = \int_{-\infty}^{\infty} x \cdot f_{0,1}(x) dx = 0\] da \(X x \cdot f_{0,1}(x)\) eine ungerade funktion ist. \[\mathbb{E}[X] = m\]
 \Theo[4.13] Seien X,Y zwei Zufallsvariablen. Falls X und Y unabhängig sind, dann gilt \[ \mathbb{E}[XY] = \mathbb{E}[X]\mathbb{E}[Y]\]
+\subsection{Extremwert Formel}
 \Satz[4.14 Stetige Extremwertformel] \newline
 Sei X eine Zufallsvariable, sodass \( X \geq 0 \) fast sicher gilt. Dann gilt \[ \mathbb{E}[X] = \int_0^{\infty} \mathbb{P}[X \geq x]dx\]
 \Bem[4.14A]
 Anwedungen: Ausrechnen von Erwartungswert einer exponential-verteilten Zufallsvariable. Sei T eine exponential-verteilte Zufallsvariable mit Paramter \(\lambda \geq 0\) \[ \mathbb{E}[T] = \int_0^\infty \mathbb{P}[X \geq x]dx = \int_0^\infty \exp^{-\lambda x }dx = \frac{1}{\lambda}\]
 \Satz[4.15 Diskrete Extremwertformel] \newline
 Sei X eine diskrete Zufallsvariable mit Werten in \( \N = \{0, 1, 2, \dots \}\). Dann gilt folgende Identität \[ \mathbb{E}[X] = \sum_{n=1}^{\infty} \mathbb{P}[X \geq n]\]
+\subsection{Charakterisierung der Eigenschaften von Z.V}
 \Satz[4.16] \newline
 Sei X eine Zufallsvariable. Sei \( f: \R \rightarrow \R_+ \) eine Abbildung, sodass \( \int_{-\infty}^{+ \infty} f(x)dx = 1\). Dann sind folgende Aussagen äquivalent
 \begin{itemize}
@@ -61,12 +68,14 @@ Seien \(X_1, \dots , X_n \) n Zufallsvariablen. Die folgenden Aussagen sind äqu
     \item \(X_1, \dots , X_n \) sind unabhängig
     \item Für jedes \( \phi_1 (X_1), \dots \phi_n(X_n ) : \R \rightarrow \R \) beschränkt gilt \[\mathbb{E}[\phi_1(X_1), \dots \phi_n(X_n)] = \mathbb{E}[\phi_1(X_1)] \dots \mathbb{E}[\phi_n(X_n)]\]
 \end{itemize}
+\subsection{Ungleichungen}
 \Satz[4.19] \newline
 Seien X,Y zwei Zufallsvariablen, sodass \[ X \leq Y f.s\] gilt. Falls beide Erwartungswerte wohldefiniert sind folgt dann \[ \mathbb{E}[X] \leq \mathbb{E}[Y] f.s\]
 \Theo[4.20 Markow-Ungleichung] \newline
 Sei X eine nicht-negative Zufallsvariable. Für jedes \( a > 0\) gilt dann \[ \mathbb{P}[X \geq a ] \leq \frac{\mathbb{E}[X]}{a}\]
 \Theo[4.21 Jensen Ungleichung] \newline
 Sei X eine Zufallsvariable. Sei \( \phi \R \rightarrow \R \) eine konvexe Funktion. Falls \( \mathbb{E}[\phi(X)]\) und \( \mathbb{E}[X]\) wohldefiniert sind, gilt \[ \phi(\mathbb{E}[X] \leq \mathbb{E}[\phi(X)])\]
+\subsection{Varianz}
 \Def[4.22] Sei X eine Zufallsvariable, sodass \( \mathbb{E}[X^2] < \infty \). Wir definieren die Varianz von X durch \[ \sigma_X^2 = \mathbb{E}[(X-m)^2], \ \text{wobei} \ m=\mathbb{E}[X]\] DIe Wurzel aus \(\sigma_X^2\) nennen wir die Standardabweichung von X \newline
 \Satz[4.24 Chebychev Ungleichung] \newline
 Sei X eine Zufallsvariable mit \( \mathbb{E}[X^2] < \infty\). Dann gilt für jedes \( a \geq 0\) \[ \mathbb{P}[\abs{X -m} \geq a] \leq \frac{\sigma_X^2}{a^2}, \text{wobei m} = \mathbb{E}[X]\]
@@ -77,6 +86,7 @@ Sei X eine Zufallsvariable mit \( \mathbb{E}[X^2] < \infty\). Dann gilt für jed
     \item Seien \(X_1, \dots , X_n \) n-viele paarweise unabhängige Zufallsvariablen und \(S = X_1 + \dots + X_n\). Dann gilt \[ \sigma_S^2 = \sigma_{X_1}^2 + \dots + \sigma_{X_n}^2\]
     \item Var[Z + b] = Var[Z] \(\  \forall b \in \R \)
 \end{itemize}
+\subsection{Kovarianz}
 \Def[4.26] \newline
 Seien X,Y zwei Zufallsvariablen mit endlichen zweiten Momenten \( \mathbb{E}[X^2] < \infty \) und \( \mathbb{E}[Y^2] < \infty \). Wir definieren die Kovarianz zwischen X und Y durch \[\text{Cov}(X,Y) = \mathbb{E}[XY]-\mathbb{E}[X]\mathbb{E}[Y]\]
 \Bem[4.26A] \newline
