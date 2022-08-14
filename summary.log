@@ -1,10 +1,10 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022/Arch Linux) (preloaded format=pdflatex 2022.5.18)  12 AUG 2022 11:23
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022/Arch Linux) (preloaded format=pdflatex 2022.5.28)  14 AUG 2022 17:47
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
  %&-line parsing enabled.
-**/home/samuel/Desktop/Term4/WUS/summary.tex
-(/home/samuel/Desktop/Term4/WUS/summary.tex
+**/home/samuel/Desktop/4term/W-S/summary.tex
+(/home/samuel/Desktop/4term/W-S/summary.tex
 LaTeX2e <2021-11-15> patch level 1
 L3 programming layer <2022-04-10> (/usr/share/texmf-dist/tex/latex/extsizes/extarticle.cls
 Document Class: extarticle 1996/10/08 v1.0 Non Standard LaTeX document class
@@ -598,44 +598,49 @@ Package pdflscape Info: Auto-detected driver: pdftex on input line 81.
 \openout2 = `Kapitel1.aux'.
 
  (./Kapitel1.tex
-LaTeX Font Info:    Trying to load font information for U+msa on input line 5.
+LaTeX Font Info:    Trying to load font information for U+msa on input line 4.
  (/usr/share/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 ) (/usr/share/texmf-dist/tex/latex/microtype/mt-msa.cfg
 File: mt-msa.cfg 2006/02/04 v1.1 microtype config. file: AMS symbols (a) (RS)
 )
-LaTeX Font Info:    Trying to load font information for U+msb on input line 5.
+LaTeX Font Info:    Trying to load font information for U+msb on input line 4.
  (/usr/share/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 ) (/usr/share/texmf-dist/tex/latex/microtype/mt-msb.cfg
 File: mt-msb.cfg 2005/06/01 v1.0 microtype config. file: AMS symbols (b) (RS)
 )
-Underfull \hbox (badness 10000) in paragraph at lines 14--18
+Underfull \hbox (badness 10000) in paragraph at lines 18--22
 \OT1/cmr/m/n/8 (+20) das Tripel$(\OML/cmm/m/it/8 !; \OMS/cmsy/m/n/8 F\OML/cmm/m/it/8 ; \OMS/cmsy/m/n/8 P\OT1/cmr/m/n/8 (+20) )$ Wahr-schein-lich-keits-raum.
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 14--18
+Underfull \hbox (badness 10000) in paragraph at lines 18--22
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 39--41
+Underfull \hbox (badness 10000) in paragraph at lines 42--43
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 39--41
+Underfull \hbox (badness 10000) in paragraph at lines 45--47
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 39--41
+Underfull \hbox (badness 10000) in paragraph at lines 45--47
 
  []
 
 
-Overfull \hbox (13.04878pt too wide) in paragraph at lines 43--45
+Underfull \hbox (badness 10000) in paragraph at lines 45--47
+
+ []
+
+
+Overfull \hbox (13.04878pt too wide) in paragraph at lines 49--51
 [][][][][][] 
  []
 
@@ -734,8 +739,8 @@ Underfull \hbox (badness 10000) in paragraph at lines 88--88
 pdfTeX warning (ext4): destination with the same identifier (name{page.}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.17 ...cht-negative Zufallsvariable. Dann gilt \[
-                                                   \mathbb{E}[X] \geq 0\] [2 <./Gleichverteilt.png (PNG copy)> <./exp_Dichte_Verteilung.png (PNG copy)> <./Dichte_Normalverteilung.png (PNG copy)>]
+l.5 ... mit nicht-negativen Werten. Dann heisst \[
+                                                   \mathbb{E}[X] = \int_0^\i... [2 <./Gleichverteilt.png (PNG copy)> <./exp_Dichte_Verteilung.png (PNG copy)> <./Dichte_Normalverteilung.png (PNG copy)>]
 LaTeX Font Info:    Trying to load font information for U+bbm on input line 19.
  (/usr/share/texmf-dist/tex/latex/bbm-macros/ubbm.fd
 File: ubbm.fd 1999/03/15 V 1.2 Font definition for bbm font - TH
@@ -759,15 +764,15 @@ Underfull \hbox (badness 6445) in paragraph at lines 86--86
 []\OT1/cmr/m/n/8 (+20) Seien $\OML/cmm/m/it/8 X[]; [] ; X[]$ \OT1/cmr/m/n/8 (+20) n-viele paar-wei-se un-
  []
 
-)
-\openout2 = `Kapitel5.aux'.
 
- (./Kapitel5.tex
 pdfTeX warning (ext4): destination with the same identifier (name{page.}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.5 ...wobei jedes Mitglied definiert ist durch \[
-                                                   p(x_1, \dots , x_n) = \ma... [3]
+l.86 ...nd \(S = X_1 + \dots + X_n\). Dann gilt \[
+                                                   \sigma_S^2 = \sigma_{X_1}... [3])
+\openout2 = `Kapitel5.aux'.
+
+ (./Kapitel5.tex
 Underfull \hbox (badness 10000) in paragraph at lines 12--13
 \OT1/cmr/m/n/8 (+20) Seien $\OML/cmm/m/it/8 X[]; [] ; X[]$ \OT1/cmr/m/n/8 (+20) n dis-kre-te Zu-falls-va-ria-
  []
@@ -829,6 +834,11 @@ Overfull \hbox (1.39223pt too wide) detected at line 18
  []
 
 
+pdfTeX warning (ext4): destination with the same identifier (name{page.}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.24 \[
+       L(x_1, \dots , x_n; t_{ML}(x_1, \dots , x_n)) = \max_{\theta \in \The... [4]
 Overfull \hbox (14.91248pt too wide) detected at line 24
 \OML/cmm/m/it/8 L\OT1/cmr/m/n/8 (\OML/cmm/m/it/8 x[]; [] ; x[]\OT1/cmr/m/n/8 ; \OML/cmm/m/it/8 t[]\OT1/cmr/m/n/8 (\OML/cmm/m/it/8 x[]; [] ; x[]\OT1/cmr/m/n/8 )) = [] \OML/cmm/m/it/8 L\OT1/cmr/m/n/8 (\OML/cmm/m/it/8 x[]; [] ; x[]\OT1/cmr/m/n/8 ; \OML/cmm/m/it/8 ^^R\OT1/cmr/m/n/8 )
  []
@@ -840,13 +850,13 @@ Overfull \hbox (14.91248pt too wide) detected at line 24
 pdfTeX warning (ext4): destination with the same identifier (name{page.}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.9 ...aden falls ihre Dichte gegeben ist durch \[
-                                                   f_X(y) = \frac{1}{2^{\fra... [4])
+l.3 \Def
+        [2.1] \newline [5])
 pdfTeX warning (ext4): destination with the same identifier (name{page.}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
 l.110 \end{multicols*}
-                       [5] (./summary.aux (./Kapitel1.aux) (./Kapitel2.aux) (./Kapitel3.aux) (./Kapitel4.aux) (./Kapitel5.aux) (./Kapitel6.aux) (./St_Kapitel1.aux) (./St_Kapitel2.aux))
+                       [6] (./summary.aux (./Kapitel1.aux) (./Kapitel2.aux) (./Kapitel3.aux) (./Kapitel4.aux) (./Kapitel5.aux) (./Kapitel6.aux) (./St_Kapitel1.aux) (./St_Kapitel2.aux))
 Package rerunfilecheck Info: File `summary.out' has not changed.
 (rerunfilecheck)             Checksum: D9BA070691FDD9DFA927DFE7B72D0087;7253.
 
@@ -863,16 +873,16 @@ Underfull \hbox (badness 10000) in paragraph at lines 111--111
 Here is how much of TeX's memory you used:
  16188 strings out of 478238
  260187 string characters out of 5850456
- 680244 words of memory out of 5000000
+ 677782 words of memory out of 5000000
  33928 multiletter control sequences out of 15000+600000
  481017 words of font info for 120 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 61i,21n,75p,1035b,892s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 61i,21n,75p,1035b,905s stack positions out of 5000i,500n,10000p,200000b,80000s
  </home/samuel/.texlive/texmf-var/fonts/pk/ljfour/public/bbm/bbm8.600pk></usr/share/texmf-dist/fonts/type1/public/amsfonts/cmextra/cmbsy8.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx8.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cmextra/cmex8.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi5.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi6.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr5.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmsl8.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy5.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy6.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/symbols/msam10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm7.pfb>
-Output written on summary.pdf (5 pages, 326419 bytes).
+Output written on summary.pdf (6 pages, 327964 bytes).
 PDF statistics:
- 290 PDF objects out of 1000 (max. 8388607)
- 242 compressed objects within 3 object streams
+ 293 PDF objects out of 1000 (max. 8388607)
+ 244 compressed objects within 3 object streams
  47 named destinations out of 1000 (max. 500000)
  24896 words of extra memory for PDF output out of 29859 (max. 10000000)
 
